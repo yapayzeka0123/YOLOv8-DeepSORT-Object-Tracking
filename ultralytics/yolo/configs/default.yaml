@@ -9,8 +9,8 @@ model: null # i.e. yolov8n.pt, yolov8n.yaml. Path to model file
 data: null # i.e. coco128.yaml. Path to data file
 epochs: 100 # number of epochs to train for
 patience: 50  # TODO: epochs to wait for no observable improvement for early stopping of training
-batch: 16 # number of images per batch
-imgsz: 640 # size of input images
+batch: 2 # number of images per batch #!!!!!DEĞSTIRDIM
+imgsz: 640 # size of input images #!!!!!!!DEĞSTIRDIM
 save: True # save checkpoints
 cache: False # True/ram, disk or False. Use cache for data loading
 device: null # cuda device, i.e. 0 or 0,1,2,3 or cpu. Device to run on

@@ -31,6 +31,7 @@ from pathlib import Path
 
 import cv2
 
+
 from ultralytics.nn.autobackend import AutoBackend
 from ultralytics.yolo.configs import get_config
 from ultralytics.yolo.data.dataloaders.stream_loaders import LoadImages, LoadScreenshots, LoadStreams
@@ -219,6 +220,8 @@ class BasePredictor:
             cv2.resizeWindow(str(p), im0.shape[1], im0.shape[0])
         cv2.imshow(str(p), im0)
         cv2.waitKey(1)  # 1 millisecond
+
+       
 
     def save_preds(self, vid_cap, idx, save_path):
         im0 = self.annotator.result()
